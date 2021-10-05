@@ -1,4 +1,5 @@
-﻿using P1_AP1_Felix_20180570.UI.Registros;
+﻿using P1_AP1_Felix_20180570.UI.Consultas;
+using P1_AP1_Felix_20180570.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +36,8 @@ namespace P1_AP1_Felix_20180570
 
         private void ConsultaAportesMenuItem_Click(object sender, RoutedEventArgs e)
         {
-
+            cAportes ca = new cAportes();
+            ca.Show();
         }
 
         private void AportesButton_Click(object sender, RoutedEventArgs e)
@@ -47,7 +49,8 @@ namespace P1_AP1_Felix_20180570
 
         private void CAportesButton_Click(object sender, RoutedEventArgs e)
         {
-
+            cAportes ca = new cAportes();
+            ca.Show();
         }
     }
 }
