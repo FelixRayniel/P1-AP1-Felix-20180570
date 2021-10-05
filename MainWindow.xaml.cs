@@ -52,5 +52,10 @@ namespace P1_AP1_Felix_20180570
             cAportes ca = new cAportes();
             ca.Show();
         }
+
+        private void CAportesButton_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
