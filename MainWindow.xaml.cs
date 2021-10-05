@@ -1,4 +1,5 @@
-﻿using System;
+﻿using P1_AP1_Felix_20180570.UI.Registros;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,25 @@ namespace P1_AP1_Felix_20180570
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void AportesMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            rAportes ra = new rAportes();
+
+            ra.Show();
+        }
+
+        private void ConsultaAportesMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AportesButton_Click(object sender, RoutedEventArgs e)
+        {
+            rAportes ra = new rAportes();
+
+            ra.Show();
         }
 
         private void CAportesButton_Click(object sender, RoutedEventArgs e)
