@@ -7,6 +7,35 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <StackPanel>
+            <Menu Height="30" FontSize="18">
+                <MenuItem Header="Registros" >
+                    <MenuItem x:Name="AportesMenuItem" Header="Registro de Aportes" Click="AportesMenuItem_Click" />
+                </MenuItem>
 
+                <MenuItem Header="Consultas">
+                    <MenuItem x:Name="ConsultaAportesMenuItem" Header="Consulta de Aportes" Click="ConsultaAportesMenuItem_Click"/>
+                </MenuItem>
+
+                <MenuItem Header="Ayuda">
+                    <Menu/>
+                </MenuItem>
+            </Menu>
+
+        </StackPanel>
+
+        <Button x:Name="AportesButton" Click="AportesButton_Click" Margin="165,190,469,191" >
+            <StackPanel Orientation="Horizontal" >
+                <Image Source="/Resources/user1.png"  />
+                <Label Content="Registro de Aportes" Width="118" />
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="CAportesButton" Margin="444,190,179,191" Click="CAportesButton_Click" >
+            <StackPanel Orientation="Horizontal" >
+                <Image Source="/Resources/Consulta.png"  />
+                <Label Content="Consulta de Aportes" Width="118" />
+            </StackPanel>
+        </Button>
     </Grid>
 </Window>

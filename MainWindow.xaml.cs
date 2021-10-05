@@ -24,5 +24,10 @@ namespace P1_AP1_Felix_20180570
         {
             InitializeComponent();
         }
+
+        private void CAportesButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
