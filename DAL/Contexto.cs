@@ -10,7 +10,7 @@ namespace P1_AP1_Felix_20180570.DAL
 {
     public class Contexto : DbContext
     {
-        public DbSet<Aportes> aportes { get; set; }
+        public DbSet<Aportes> Aportes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

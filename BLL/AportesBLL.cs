@@ -35,7 +35,7 @@ namespace P1_AP1_Felix_20180570.BLL
             try
             {
                 //Agregar la entidad que se desea insertar al contexto
-                contexto.aportes.Add(aporte);
+                contexto.Aportes.Add(aporte);
                 paso = contexto.SaveChanges() > 0;
             }
             catch (Exception)
@@ -79,11 +79,11 @@ namespace P1_AP1_Felix_20180570.BLL
             Contexto contexto = new Contexto();
             try
             {
-                var aporte = contexto.aportes.Find(id);
+                var aporte = contexto.Aportes.Find(id);
 
                 if (aporte != null)
                 {
-                    contexto.aportes.Remove(aporte);
+                    contexto.Aportes.Remove(aporte);
                     paso = contexto.SaveChanges() > 0;
                 }
             }
@@ -106,7 +106,7 @@ namespace P1_AP1_Felix_20180570.BLL
 
             try
             {
-                aporte = contexto.aportes.Find(id);
+                aporte = contexto.Aportes.Find(id);
             }
             catch (Exception)
             {
@@ -129,7 +129,7 @@ namespace P1_AP1_Felix_20180570.BLL
 
             try
             {
-                Lista = contexto.aportes.Where(aporte).ToList();
+                Lista = contexto.Aportes.Where(aporte).ToList();
 
             }
             catch (Exception)
@@ -150,7 +150,7 @@ namespace P1_AP1_Felix_20180570.BLL
             bool encontrado = false;
             try
             {
-                encontrado = contexto.aportes.Any(u => u.AporteID == id);
+                encontrado = contexto.Aportes.Any(u => u.AporteID == id);
             }
             catch (Exception)
             {
@@ -169,7 +169,7 @@ namespace P1_AP1_Felix_20180570.BLL
             Contexto contexto = new Contexto();
             try
             {
-                lista = contexto.aportes.ToList();
+                lista = contexto.Aportes.ToList();
             }
             catch (Exception)
             {
