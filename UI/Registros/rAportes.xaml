@@ -45,13 +45,6 @@
                 </StackPanel>
             </Button>
 
-            <Button x:Name="EditarButton" Height="34" Width="93" Margin="5,0,0,0" Click="EditarButton_Click" >
-                <StackPanel Orientation="Horizontal" >
-                    <Image Source="/Resources/Edit.png"  />
-                    <Label Content="Editar" />
-                </StackPanel>
-            </Button>
-
             <Button x:Name="EliminarButton" Height="34" Width="93" Margin="5,0,0,0" Click="EliminarButton_Click" >
                 <StackPanel Orientation="Horizontal" >
                     <Image Source="/Resources/delete.png"  />

@@ -26,8 +26,7 @@ namespace P1_AP1_Felix_20180570.UI.Registros
         {
             InitializeComponent();
             this.DataContext = aporte;
-            EditarButton.IsEnabled = false;
-            EliminarButton.IsEnabled = false;
+            
 
         }
 
@@ -63,9 +62,6 @@ namespace P1_AP1_Felix_20180570.UI.Registros
             if (aporte != null)
             {
                 this.aporte = aportes;
-                GuardarButton.IsEnabled = false;
-                EditarButton.IsEnabled = true;
-                EliminarButton.IsEnabled = true;
 
             }
             else
@@ -81,12 +77,7 @@ namespace P1_AP1_Felix_20180570.UI.Registros
         private void NuevoButton_Click(object sender, RoutedEventArgs e)
         {
             Limpiar();
-            if (GuardarButton.IsEnabled == false)
-            {
-                GuardarButton.IsEnabled = true;
-                EditarButton.IsEnabled = false;
-                EliminarButton.IsEnabled = false;
-            }
+           
         }
 
         private void GuardarButton_Click(object sender, RoutedEventArgs e)
@@ -125,37 +116,9 @@ namespace P1_AP1_Felix_20180570.UI.Registros
                 MessageBox.Show("No fue posible eliminar", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
-            if (GuardarButton.IsEnabled == false)
-            {
-                GuardarButton.IsEnabled = true;
-                EditarButton.IsEnabled = false;
-                EliminarButton.IsEnabled = false;
-            }
+            
         }
 
-        private void EditarButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (!Validar())
-                return;
-
-            var paso = AportesBLL.Modificar(aporte);
-
-            if (paso)
-            {
-                Limpiar();
-                MessageBox.Show("Transaccion Exitosa!!", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-            else
-            {
-                MessageBox.Show("Transaccion Fallida", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-
-            if (GuardarButton.IsEnabled == false)
-            {
-                GuardarButton.IsEnabled = true;
-                EditarButton.IsEnabled = false;
-                EliminarButton.IsEnabled = false;
-            }
-        }
+       
     }
 }
