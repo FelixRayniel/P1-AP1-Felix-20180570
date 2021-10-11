@@ -11,7 +11,7 @@ namespace P1_AP1_Felix_20180570.Entidades
     {
         [Key]
         public int AporteID { get; set; }
-        public DateTime Fecha { get; set; } = DateTime.Now;
+        public DateTime Fecha { get; set; }
         public string Persona { get; set; }
         public string Concepto { get; set; }
         public double Monto { get; set; }
