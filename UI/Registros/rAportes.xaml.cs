@@ -40,6 +40,13 @@ namespace P1_AP1_Felix_20180570.UI.Registros
                 esValido = false;
                 MessageBox.Show("Transaccion Fallida, El campo Aporte ID o Persona no puede estar vacio", "Fallo", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
+
+            if (MontoTextBox.Text.Length == 0)
+            {
+                esValido = false;               
+                MessageBox.Show("Transaccion Fallida, El campo monto no puede estar vacio", "Fallo",
+                    MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
             return esValido;
 
         }

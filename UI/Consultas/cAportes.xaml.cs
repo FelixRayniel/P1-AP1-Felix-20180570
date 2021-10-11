@@ -61,7 +61,7 @@ namespace P1_AP1_Felix_20180570.UI.Consultas
             
 
             var monto = listado.Sum(x => x.Monto);
-            TotalTextBox.Text = monto.ToString();   
+            TotalTextBox.Text = monto.ToString("N2");   
             
 
         }
