@@ -36,7 +36,7 @@ namespace P1_AP1_Felix_20180570.Migrations
 
                     b.HasKey("AporteID");
 
-                    b.ToTable("aportes");
+                    b.ToTable("Aportes");
                 });
 #pragma warning restore 612, 618
         }

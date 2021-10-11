@@ -9,8 +9,8 @@ using P1_AP1_Felix_20180570.DAL;
 namespace P1_AP1_Felix_20180570.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20211005033252_Migracion_inicial")]
-    partial class Migracion_inicial
+    [Migration("20211011233604_Migracion_Inicial")]
+    partial class Migracion_Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -38,7 +38,7 @@ namespace P1_AP1_Felix_20180570.Migrations
 
                     b.HasKey("AporteID");
 
-                    b.ToTable("aportes");
+                    b.ToTable("Aportes");
                 });
 #pragma warning restore 612, 618
         }

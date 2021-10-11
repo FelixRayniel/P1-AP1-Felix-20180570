@@ -54,10 +54,4 @@
     <Resource Include="Resources\zoom1.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="DATA\BDAportes.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
